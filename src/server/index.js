@@ -29,17 +29,17 @@ app.get('/', function (req, res) {
 })
 
 
-app.post('/apiurl', async (req, res) => {
+app.post('/articalurl', async (req, res) => {
 
     let url = req.body.userUrl
     console.log('server ' + url);
     const StandardURL = 'https://api.meaningcloud.com/sentiment-2.1'
     //const key = process.env.API_KEY;
     
-    let apiUrl = `${StandardURL}?key=${key}&url=${url}&lang=en`
+    let articalUrl = `${StandardURL}?key=${key}&url=${url}&lang=en`
     
 
-    fetch(apiUrl).then((response) => {
+    fetch(articalUrl).then((response) => {
         return response.json();
     })
         .then((data) => {
@@ -54,8 +54,8 @@ app.post('/apiurl', async (req, res) => {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8030, function () {
-    console.log('Example app listening on port 8030!');
+app.listen(8084, function () {
+    console.log('Example app listening on port 8084!');
 })
 
 app.get('/test', function (req, res) {
