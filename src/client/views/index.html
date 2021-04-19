@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+     
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <img src="/src/client/image/LogoMeaningCloud210x85.png"/>
+            </div>
+            
+        </header>
+
+        <main>
+            
+            <!--section>
+                <form id="artical">
+                    <label>your artical here:</label>
+                <textarea id="articaltext" name="text" col="" row="" placeholder="your artical here....">
+                </textarea>
+                    <input list="langs" name="browser" id="lang" class="select">
+                    <datalist id="langs">
+                        <option value="ar"></option>
+                        <option value="en"></option>
+                        <option value="fr"></option>
+                        <option value="es"></option>
+                        <option value="de"></option>
+                    </datalist>
+                    <input type="submit" name="" value="analysis" id="analysis" onclick="return Client.analysisText(event)">
+                </form>
+            </!--section-->
+
+        
+        <section>
+            
+            <form class="" onsubmit="return Client.analysis(event)">
+            <label>your artical url here:</label>
+            <input id="url" type="url" name="input" value="" placeholder="Enter artical url here..."
+            />
+            <input
+            id="btn"  type="submit" name="" value="analysis"onclick="return Client.analysis(event)" onsubmit="return analysis(event)"
+            />
+          </form>
+        </section>
+
+        <section>
+          <strong>Your artical Results:</strong>
+          <div id="text"></div>
+          <div id="agreement"></div>
+          <div id="subjectivity"></div>
+          <div id="confidence"></div>
+          <div id="irony"></div>
+          <div id="score_tag"></div>
+        </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+        <script>
+              // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+            })
+        }
+        </script>
+    </body>
+</html>

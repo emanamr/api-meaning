@@ -1,0 +1,27 @@
+@mixin width ($x){
+    width: 100%/$x;
+}
+
+
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
+
+    textarea{
+        @include width(1);
+        height: 10rem;
+    }
+
+    input {
+        padding: 5px 20px;
+        @include width(1);
+        line-height: 16px;
+        margin: 10px 0;
+
+        &.select{
+            @include width(1);
+        }
+    }
+
+}
