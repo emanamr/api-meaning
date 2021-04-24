@@ -22,7 +22,7 @@ const post = async (url = '', data = {}) => {
 }
 
 const analysis = async (event) => {
-    event.preventDefault();
+    
     let test = require('valid-url');
     let url = document.getElementById('url').value;
     
