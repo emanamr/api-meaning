@@ -1,5 +1,5 @@
-import { analysis} from './js/analysisText.js'
-import {viewData} from './js/viewData.js'
+import { analysis} from '../src/client/js/analysisText.js'
+import {viewData} from '../src/client/js/viewData.js'
 
 //for style
 import './styles/resets.scss'
